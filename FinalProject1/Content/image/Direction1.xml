@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<QuadLanguages>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	It will be 'University Pl';
+	Come down 'University Pl' about 50 yards;
+	You will see 'Gateway to Campus' on your left;
+	Then make a left and go upstairs;
+	You will find 'Hall of Languages' in front of you
+	</Route>
+    <Map>Languagesmap</Map>
+	</QuadLanguages>
+	<LanguagesChapel>
+		<Route>Head south;
+	Turn right;
+	Turn left;
+	Turn right;
+	Turn left;
+	</Route>
+	<Map>LanguagesChapel</Map>
+	</LanguagesChapel>
+	<ChapelLanguages>
+		<Route>Head south;
+	Turn right;
+	Turn left;
+	Turn right;
+	Turn left;
+	</Route>
+	<Map>LanguagesChapel</Map>
+	</ChapelLanguages>
+	<LanguagesCrouse>
+		<Route>Head south;
+	Turn right toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	</Route>
+	<Map>LanguagesCrouse</Map>
+	</LanguagesCrouse>
+	<CrouseLanguages>
+		<Route>Head south;
+	Turn right toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	</Route>
+	<Map>LanguagesCrouse</Map>
+	</CrouseLanguages>
+	<CrouseDome>
+		<Route>Head southeast on Crouse Dr;
+		Turn right toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right toward Crouse Dr;
+		Turn right onto Crouse Dr;
+	Turn right toward Irving Ave;Turn right onto Irving Ave;
+	</Route>
+	<Map>CrouseDome</Map>
+	</CrouseDome>
+	<DomeCrouse>
+		<Route>Head southeast on Crouse Dr;
+		Turn right toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right toward Crouse Dr;
+		Turn right onto Crouse Dr;
+	Turn right toward Irving Ave;Turn right onto Irving Ave;
+	</Route>
+	<Map>CrouseDome</Map>
+	</DomeCrouse>
+	<CrouseNew>
+		<Route>Head northwest on Crouse Dr toward University Pl;
+	Turn right onto University Pl;
+	</Route>
+	<Map>CrouseNew</Map>
+	</CrouseNew>
+	<NewCrouse>
+		<Route>Head northwest on Crouse Dr toward University Pl;
+	Turn right onto University Pl;
+	</Route>
+	<Map>CrouseNew</Map>
+	</NewCrouse>
+	<LanguagesCarnegie>
+		<Route>Head south;
+	Turn left toward Waverly Ave;
+	Turn left toward Waverly Ave;
+	Turn right toward Waverly Ave;
+	Turn left at University Pl;
+	Turn right toward Waverly Ave;
+	Turn right onto Waverly Ave;
+	</Route>
+	<Map>LanguagesCarnegie</Map>
+	</LanguagesCarnegie>
+	<CarnegieLanguages>
+		<Route>Head south;
+	Turn left toward Waverly Ave;
+	Turn left toward Waverly Ave;
+	Turn right toward Waverly Ave;
+	Turn left at University Pl;
+	Turn right toward Waverly Ave;
+	Turn right onto Waverly Ave;
+	</Route>
+	<Map>LanguagesCarnegie</Map>
+	</CarnegieLanguages>
+	<CarnegieCrouse>
+		<Route>Head west on Waverly Ave;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right at University Pl;
+		Turn left toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	</Route>
+	<Map>CarnegieCrouse</Map>
+	</CarnegieCrouse>
+	<CrouseCarnegie>
+		<Route>Head west on Waverly Ave;
+		Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right at University Pl;
+		Turn left toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	</Route>
+	<Map>CarnegieCrouse</Map>
+	</CrouseCarnegie>
+	<CarnegieChapel>
+		<Route>Head west on Waverly Ave;Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right at University Pl;
+		Turn left toward Crouse Dr;
+		Turn left onto Crouse Dr;
+	Turn left;
+	</Route>
+	<Map>CarnegieChapel</Map>
+	</CarnegieChapel>
+	<ChapelCarnegie>
+		<Route>Head west on Waverly Ave;Turn left toward Crouse Dr;
+		Turn left toward Crouse Dr;
+		Turn right at University Pl;
+		Turn left toward Crouse Dr;
+		Turn left onto Crouse Dr;
+	Turn left;
+	</Route>
+	<Map>CarnegieChapel</Map>
+	</ChapelCarnegie>
+	<CarnegieDome>
+		<Route>Head west on Waverly Ave toward University Ave;
+	Turn left onto Irving Ave;
+	</Route>
+	<Map>CarnegieDome</Map>
+	</CarnegieDome>
+	<DomeCarnegie>
+		<Route>Head west on Waverly Ave toward University Ave;
+	Turn left onto Irving Ave;
+	</Route>
+	<Map>CarnegieDome</Map>
+	</DomeCarnegie>
+	<DomeChapel>
+		<Route>Head north on Irving Ave;
+	Turn right toward Crouse Dr;
+	Turn left toward Crouse Dr;
+	Slight right onto Crouse Dr;
+	Turn left;Turn right;
+	Turn left;
+	Slight right;
+	Turn left;
+	</Route>
+	<Map>DomeChapel</Map>
+	</DomeChapel>
+	<ChapelDome>
+		<Route>Head north on Irving Ave;
+	Turn right toward Crouse Dr;
+	Turn left toward Crouse Dr;
+	Slight right onto Crouse Dr;
+	Turn left;Turn right;
+	Turn left;
+	Slight right;
+	Turn left;
+	</Route>
+	<Map>DomeChapel</Map>
+	</ChapelDome>
+	<ChapelCrouse>
+		<Route>Head southeast on Crouse Dr;
+	Turn left;
+	Turn right;
+	Turn right;
+	</Route>
+	<Map>ChapelCrouse</Map>
+	</ChapelCrouse>
+	<CrouseChapel>
+		<Route>Head southeast on Crouse Dr;
+	Turn left;
+	Turn right;
+	Turn right;
+	</Route>
+	<Map>ChapelCrouse</Map>
+	</CrouseChapel>
+	<LanguagesNew>
+		<Route>Head south;
+	Turn right toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	Turn right toward University Pl;
+	Turn left toward University Pl;
+	Turn right onto University Pl;
+	</Route>
+	<Map>LanguagesNew</Map>
+	</LanguagesNew>
+	<NewLanguages>
+		<Route>Head south;
+	Turn right toward Crouse Dr;
+	Turn right onto Crouse Dr;
+	Turn right toward University Pl;
+	Turn left toward University Pl;
+	Turn right onto University Pl;
+	</Route>
+	<Map>LanguagesNew</Map>
+	</NewLanguages>
+	<QuadCrouse>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	It will be 'University Pl';
+	Come down 'University Pl' about 50 yards;
+	You will see 'Gateway to Campus' on your left;
+	Then make a left and go upstairs;
+	Make a right after seeing 'Hall of Languages';
+	Keep going until there is a crossroad;
+	You will see stairs on your left;
+	Walk along the steps and you will find 'Crouse College' in front of you</Route>
+	<Map>Crousemap</Map>
+	</QuadCrouse>
+	<QuadNew>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	Keep going until there is a crossroad;
+	You will find 'Newhouse School of Public Communication' on your right</Route>
+	<Map>Newhousemap</Map>
+	</QuadNew>
+	<QuadBird>
+		<Route>Leave Quad Center from the south gate;
+	Then take a left;
+	Come down 'University Pl' about 100 yards;
+	You will see 'ES Bird Library' on your left</Route>
+	<Map>Birdmap</Map>
+	</QuadBird>
+	<BirdNew>
+		<Route>Head west on Waverly Ave toward Walnut Pl;
+	Turn left toward University Pl;
+	Turn right toward University Pl;
+	Turn right onto University Pl;
+	</Route>
+	<Map>BirdNew</Map>
+	</BirdNew>
+	<NewBird>
+		<Route>Head east on University Pl;
+	Turn left toward Waverly Ave;
+	Turn left toward Waverly Ave;
+	Turn right onto Waverly Ave;
+	</Route>
+	<Map>BirdNew</Map>
+	</NewBird>
+	<BirdCarnegie>
+		<Route>Head west on Waverly Ave toward Walnut Pl</Route>
+	<Map>BirdCarnegie</Map>
+	</BirdCarnegie>
+	<CarnegieBird>
+		<Route>Head west on Waverly Ave toward Walnut Pl</Route>
+	<Map>BirdCarnegie</Map>
+	</CarnegieBird>
+	<BirdLanguages>
+		<Route>Head west on Waverly Ave toward Walnut Pl;
+	Turn left;
+	Turn right;
+	YTurn right;
+	Turn left;
+	Turn right;
+	Turn right;
+	You will find 'Sims Hall' next to the bus stop</Route>
+	<Map>BirdLanguages</Map>
+	</BirdLanguages>
+	<LanguagesBird>
+		<Route>Head west on Waverly Ave toward Walnut Pl;
+	Turn left;
+	Turn right;
+	YTurn right;
+	Turn left;
+	Turn right;
+	Turn right;
+	You will find 'Sims Hall' next to the bus stop</Route>
+	<Map>BirdLanguages</Map>
+	</LanguagesBird>
+	<Directions>
+		<From>Schine Student Center</From>
+		<To>Brown Hall</To>
+		<Route>Leave Quad Center from the south gate;
+	Then take a left;
+	Come down 'University Pl' about 100 yards;
+	You will see 'ES Bird Library' on your left;
+	Keep going until there is a crossroad;
+	Then turn right to 'College Pl';
+	Come down 'College Pl' until crossroad
+	You will find 'Sims Hall' right across the street;
+	Make a right and keep walking until you see a large square;
+	Take a left and you will see 'Brown Hall'</Route>
+	</Directions>
+	<QuadCarnegie>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	It will be 'University Pl';
+	Come down 'University Pl' about 50 yards;
+	You will see 'Gateway to Campus' on your left;
+	Then make a left and go upstairs;
+	You will find 'Hall of Languages' in front of you;
+	Make a left then make a right;
+	Keep walking until you see a square;
+	Cross the square and you will find 'Carnegie Library' in front of you</Route>
+	<Map>Carnegiemap</Map>
+	</QuadCarnegie>
+	<QuadChapel>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	It will be 'University Pl';
+	Come down 'University Pl' about 50 yards;
+	You will see 'Gateway to Campus' on your left;
+	Then make a left and go upstairs;
+	You will find 'Hall of Languages' in front of you;
+	Make a left then make a right;
+	Keep walking until you see a square;
+	You will find 'Hendricks Chapel' right in front of you</Route>
+	<Map>Chapelmap</Map>
+	</QuadChapel>
+	<QuadDome>
+		<Route>Leave Quad Center from the south gate;
+	Then take a right;
+	It will be 'University Pl';
+	Come down 'University Pl' about 50 yards;
+	You will see 'Gateway to Campus' on your left;
+	Then make a left and go upstairs;
+	You will find 'Hall of Languages' in front of you;
+	Make a left then make a right;
+	Keep walking until you see a square;
+	Cross the square then make a right;
+	Keep walking until you see a huge white gym;
+	That is 'Carrier Dome'</Route>
+	<Map>Domemap</Map>
+	</QuadDome>
+	<Directions>
+		<From>Schine Student Center</From>
+		<To>Marshall Street</To>
+		<Route>Leave 'Quad Center' from its north gate;
+		Take a left;
+		Keep walking along 'Waverly Ave' until there is a crossroad;
+		Make a right on to 'University Ave'
+		Come down 'University Ave' about one block and you will find 'Marshall Street' on your left;</Route>
+	</Directions>	
+	
+
+	<Directions>
+		<From>Gateway to Campus</From>
+		<To>Schine Student Center</To>
+		<Route>Walk east along 'University Pl'
+	You will see 'Quad Center' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Hall of Languages</From>
+		<To>Schine Student Center</To>
+		<Route>Go downstairs to 'University Pl';
+	Walk east along 'University Pl'
+	You will see 'Quad Center' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Humanities Center</From>
+		<To>Schine Student Center</To>
+		<Route>Go downhill to 'University Pl';
+	Walk east along 'University Pl'
+	You will see 'Quad Center' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Crouse College</From>
+		<To>Schine Student Center</To>
+		<Route>Go downstairs until there is a crossroad;
+	Make a right and you will be on 'University Pl';
+	Keep walking untial you see 'Quad Center', an orange building, on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Newhouse School</From>
+		<To>Schine Student Center</To>
+		<Route>Make a left on 'S Crouse Ave';
+	Keep walking until there is a crossroad;
+	Take a left and walk along 'University Pl';
+	Keep walking untial you see 'Quad Center', an orange building, on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Smith Hall</From>
+		<To>Schine Student Center</To>
+		<Route>Go downhill to 'University Pl';
+	Take a left and come down 'University Pl' about 50 yards;
+	You will find 'Quad Center' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Es Bird Library</From>
+		<To>Schine Student Center</To>
+		<Route>Leave Bird Library from the south gate;
+	Make a right;
+	Come down 'University Pl' about 100 yards;
+	You will find 'Quad Center' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Life Sciences</From>
+		<To>Schine Student Center</To>
+		<Route>Go downstairs on to 'College Pl';
+	Take a right and keep walking until there is a crossroad;
+	Make a left;
+	Keep walking until there is an orange building on your right;
+	That is 'Quad Center'</Route>
+	</Directions>
+	<Directions>
+		<From>Sims Hall</From>
+		<To>Schine Student Center</To>
+		<Route>Make a left on 'College Pl';
+	Keep walking and turn to 'University Pl';
+	Keep walking until there is an orange building on your right;
+	That is 'Quad Center'</Route>
+	</Directions>
+	<Directions>
+		<From>Brown Hall</From>
+		<To>Schine Student Center</To>
+		<Route>Cross the square from middle;
+	Keep walking and do downhill to 'University Pl';
+	You will find 'Quad Center' right across the street</Route>
+	</Directions>
+	<Directions>
+		<From>Carnegie Library</From>
+		<To>Schine Student Center</To>
+		<Route>Cross the square from middle;
+	Keep walking and do downhill to 'University Pl';
+	You will find 'Quad Center' right across the street</Route>
+	</Directions>
+	<Directions>
+		<From>Hendricks Chapel</From>
+		<To>Schine Student Center</To>
+		<Route>Leave the square from north;
+	Keep walking and do downhill to 'University Pl';
+	You will find 'Quad Center' right across the street</Route>
+	</Directions>
+	<Directions>
+		<From>Carrier Dome</From>
+		<To>Schine Student Center</To>
+		<Route>Go east until you arrive at 'Carnegie Library';
+	Go north and cross the square;
+	Keep walking and do downhill to 'University Pl';
+	You will find 'Quad Center' right across the street</Route>
+	</Directions>
+	<Directions>
+		<From>Marshall Street</From>
+		<To>Schine Student Center</To>
+		<Route>Leave 'Marshall Street' from its east side;
+		Make a right;
+		Keep walking until there is a crossroad;
+		Take a left on to 'Waverly Ave';
+		Come down about 50 yards and you will find 'Quad Center' on your right</Route>
+	</Directions>	
+	
+	
+	<Directions>
+		<From>Gateway to Campus</From>
+		<To>Hall of Languages</To>
+		<Route>Go uphill along the footsteps at 'Gateway to Campus';
+	You will see 'Hall of Languages' at top</Route>
+	</Directions>
+	<Directions>
+		<From>Hall of Languages</From>
+		<To>Gateway to Campus</To>
+		<Route>Go downhill along the footsteps;
+	You will see 'Gateway to Campus' at south side of 'University Pl'</Route>
+	</Directions>
+	<Directions>
+		<From>Humanities Center</From>
+		<To>Crouse College</To>
+		<Route>'Crouse College' is next to 'Humanities Center' on its west side</Route>
+	</Directions>
+	<Directions>
+		<From>Crouse College</From>
+		<To>Humanities Center</To>
+		<Route>'Humanities Center' is next to 'Crouse College' on its east side</Route>
+	</Directions>
+	<Directions>
+		<From>Crouse College</From>
+		<To>Newhouse School</To>
+		<Route>Go downhill until there is a crossroad;
+		Turn left and you will see 'Newhouse School' on your left</Route>
+	</Directions>	
+		<Directions>
+		<From>Newhouse School</From>
+		<To>Crouse College</To>
+		<Route>Make a left on 'S Crouse Ave';
+		Walk along until there is a crossroad;
+		Right across the street there is stairs;
+		Go upstairs and you will see 'Crouse College'</Route>
+	</Directions>
+	<Directions>
+		<From>Smith Hall</From>
+		<To>Es Bird Library</To>
+		<Route>Go downhill to 'University Pl';
+		Turn right and come down 'University Pl' about 30 yards;
+		You will see 'Bird Library' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Es Bird Library</From>
+		<To>Smith Hall</To>
+		<Route>Leave 'Bird Library' from south gate;
+		Take a right and then left;
+		Walk uphill along 'Smith Dr';
+		You will see 'Smith Hall' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Es Bird Library</From>
+		<To>Life Sciences</To>
+		<Route>Leave 'Bird Library' from south gate;
+		Take a left;
+		Keep walking until there is a crossroad;
+		Make a right and come down 'College Pl' about 100 yards;
+		You will find 'Life Sciences' on your left</Route>
+	</Directions>	
+	<Directions>
+		<From>Life Sciences</From>
+		<To>Es Bird Library</To>
+		<Route>Walk north along 'College Pl' until there is a crossroad;
+		Take a left on to 'University Pl';
+		Come down 'University Pl' about 30 yards and you will see 'Bird Library' on your right</Route>
+	</Directions>	
+	<Directions>
+		<From>Life Sciences</From>
+		<To>Sims Hall</To>
+		<Route>Walk downhill to 'College Pl';
+		Take a left;
+		Keep walking along 'College Pl' until there is a bus stop;
+		You will find 'Sims Hall' next to the bus stop</Route>
+	</Directions>	
+	<Directions>
+		<From>Sims Hall</From>
+		<To>Life Sciences</To>
+		<Route>Walk north along 'College Pl' for 100 yards;
+		You will see 'Life Sciences' on your right</Route>
+	</Directions>		
+	<Directions>
+		<From>Sims Hall</From>
+		<To>Brown Hall</To>
+		<Route>Once you arrive at 'Sims Hall';
+		Make a right and keep walking until you see a large square;
+		Take a left and you will see 'Brown Hall'</Route>
+	</Directions>
+	<Directions>
+		<From>Brown Hall</From>
+		<To>Sims Hall</To>
+		<Route>Leave the square from east side;
+		Keep walking untill you reach 'College Pl';
+		You will see 'Sims Hall' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Brown Hall</From>
+		<To>Carnegie Library</To>
+		<Route>'Carnegie Library' is at west side of 'Brown Hall'</Route>
+	</Directions>	
+	<Directions>
+		<From>Carnegie Library</From>
+		<To>Brown Hall</To>
+		<Route>'Brown Hall' is at east side of 'Carnegie Library'</Route>
+	</Directions>	
+		<Directions>
+		<From>Carnegie Library</From>
+		<To>Hendricks Chapel</To>
+		<Route>Walk clockwise around the square about a quarter;
+		You will find 'Hendricks Chapel' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Hendricks Chapel</From>
+		<To>Carnegie Library</To>
+		<Route>Walk anticlockwise around the square about a quarter;
+		You will find 'Carnegie Library' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Hendricks Chapel</From>
+		<To>Carrier Dome</To>
+		<Route>Leave 'Hendricks Chapel' and take a right;
+		Then take another right and leave the square;
+		Keep walking and you will see a huge white building;
+		That is 'Carrier Dome'</Route>
+	</Directions>
+	<Directions>
+		<From>Carrier Dome</From>
+		<To>Hendricks Chapel</To>
+		<Route>Walk east until you see a big square;
+		Take a left;
+		You will find 'Hendricks Chapel' on your left;</Route>
+	</Directions>
+	<Directions>
+		<From>Carrier Dome</From>
+		<To>Marshall Street</To>
+		<Route>Return to 'Quad Center';
+		Leave 'Quad Center' from its north gate;
+		Take a left;
+		Keep walking along 'Waverly Ave' until there is a crossroad;
+		Make a right on to 'University Ave'
+		Come down 'University Ave' about one block and you will find 'Marshall Street' on your left;</Route>
+	</Directions>
+	<Directions>
+		<From>Marshall Street</From>
+		<To>Carrier Dome</To>
+		<Route>Return to 'Quad Center';
+		Leave Quad Center from south gate;
+		Take a right;
+		Come down 'University Pl' about 50 yards;
+		Then make a left and go upstairs;
+		Make a left then a right;
+		Keep walking until you see a square;
+		Cross the square then make a right;
+		Keep walking and you will see a huge white gym, 'Carrier Dome'</Route>
+	</Directions>	
+	
+	
+	<Directions>
+		<From>Gateway to Campus</From>
+		<To>Newhouse School</To>
+		<Route>Walk west along 'University Pl' untill there is a crossroad;
+	You will find 'Newhouse School' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Newhouse School</From>
+		<To>Gateway to Campus</To>
+		<Route>Walk east along 'University Pl' about 100 yards;
+	You will see 'Gateway to Campus' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Gateway to Campus</From>
+		<To>Smith Hall</To>
+		<Route>Walk east along 'University Pl' until you see 'Quad Center';
+	Go uphill on your right side;
+	You will then see 'Smith Hall' on your right</Route>
+	</Directions>
+	<Directions>
+		<From>Smith Hall</From>
+		<To>Gateway to Campus</To>
+		<Route>Go downhill to 'University Pl';
+	Walk west along 'University Pl';
+	Once you pass 'Quad Center';
+	You will see 'Gateway to Campus' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Gateway to Campus</From>
+		<To>Es Bird Library</To>
+		<Route>Walk east along 'University Pl';
+	Once you pass 'Quad Center';
+	You will find 'Bird Library' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Es Bird Library</From>
+		<To>Gateway to Campus</To>
+		<Route>Leave Bird Library from south gate;
+	Walk west along 'University Pl';
+	Once you pass 'Quad Center';
+	You will find 'Gateway to Campus' on your left</Route>
+	</Directions>	
+	<Directions>
+		<From>Hall of Languages</From>
+		<To>Humanities Center</To>
+		<Route>Make a right after seeing 'Hall of Languages';
+	Keep going until there is a curve to right;
+	Then take a left;
+	You will then see 'Tolley Humanities Center'</Route>
+	</Directions>
+	<Directions>
+		<From>Humanities Center</From>
+		<To>Hall of Languages</To>
+		<Route>Leave 'Tolley Humanities Center' and you will be on 'Crouse Dr';
+	Walk east along 'Crouse Dr' until it curves south;
+	Walk east about 10 yards and you will see 'Hall of Languages'</Route>
+	</Directions>	
+	<Directions>
+		<From>Humanities Center</From>
+		<To>Newhouse School</To>
+		<Route>Leave 'Humanities Center';
+	Take a left on 'Crouse Pl';
+	Walk along 'Crouse Pl' until there is a crossroad;
+	Make a right and you will see 'Newhouse School' on your left</Route>
+	</Directions>
+	<Directions>
+		<From>Newhouse School</From>
+		<To>Humanities Center</To>
+		<Route>Walk south along 'S Crouse Ave' until crossroad;
+	Go straight on to 'Crouse Dr';
+	Then you will find 'Humanities Center' as a brick-red building uphill</Route>
+	</Directions>
+	<Directions>
+		<From>Hall of Languages</From>
+		<To>Smith Hall</To>
+		<Route>'Smith Hall' is next to 'Hall of Languages' on its east side</Route>
+	</Directions>
+	<Directions>
+		<From>Smith Hall</From>
+		<To>Hall of Languages</To>
+		<Route>'Hall of Languages' is next to 'Smith Hall' on its west side</Route>
+	</Directions>	
+	
+</xml>
+
+

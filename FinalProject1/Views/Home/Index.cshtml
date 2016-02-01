@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Home";
+    ViewBag.TEST="../Content/SUmap.png";
+    
+}
+<head>
+    <title><</title>>
+
+    <script>
+        function myFunction() {
+            x = document.getElementById("test");  // 找到元素
+            x.style.display = "block";    // 改变内容
+        }
+    </script>
+    <script>
+        function myFunction1() {
+            x = document.getElementById("test");  // 找到元素
+            x.style.display = "none";    // 改变内容
+        }
+    </script>
+    <script language="JavaScript">
+        //from webjx.com
+        function point_it(event) {
+            pos_x = event.offsetX ? (event.offsetX) : event.pageX - document.getElementById("pointer_div").offsetLeft;
+            pos_y = event.offsetY ? (event.offsetY) : event.pageY - document.getElementById("pointer_div").offsetTop;
+            document.getElementById("cross").style.left = "120px";
+            document.getElementById("cross").style.top = "49px";
+            document.getElementById("cross").style.visibility = "visible";
+            document.pointform.form_x.value = pos_x;
+            document.pointform.form_y.value = pos_y;
+        }
+    </script>
+</head>
+
+    
+
+    
+
+<form name="pointform" method="post">
+    <div id="pointer_div" onclick="point_it(event)" style="background-image: url(@ViewBag.TEST); width: 500px; height: 333px;">
+        @*<img src="@Url.Content("~/Content/SUmap.png")" usemap="#planetmap" />
+        <map name="#planetmap">
+            <area shape="circle" id="test1" coords="358,183,10" onmouseout="myFunction1()" onmouseover="myFunction()" @Html.ActionLink("bird", "AddToCart", new { sitename = "New House" })>
+            
+            <area shape="circle" coords="699,175,10" @Html.ActionLink("gym", "AddToCart", new { sitenem = "gym" })>
+        </map>*@
+        <p class="button" style="position: relative;left:150px;top:70px">
+               @Html.ActionLink("Home", "Index", "Site")
+        </p>
+        <img src="@Url.Content("~/Content/image/carnegie.jpg")" id="cross" style="position: relative; visibility: hidden; z-index: 2; width: 100px; height: 33px;">
+    </div>
+    <br>
+    <br> 
+    <br> 
+    <br> 
+    <br>  
+    You pointed on x = <input type="text" name="form_x" size="4" /> - y = <input type="text" name="form_y" size="4" />
+</form>
+    @*<div id="pointer_div"  style="background-image:url('http://www.webjx.com/upfiles/20070504/20070504003546_01.jpg');width:500px;height:333px;">
+        <img src="@Url.Content("~/Content/image/carnegie.jpg")" id="cross" style="position:relative;visibility:hidden;z-index:2;">
+    </div>*@
+   
+
+   
+<div id="comeonbaby">
+        <img id="test" style="display:none;width:20px;height:30px" src="@Url.Content("~/Content/image/carnegie.jpg")">
+</div>

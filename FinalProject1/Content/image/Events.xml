@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+  <!-- XML test case -->
+<CATALOG>
+<basketball>
+<Day>May 5th Basketball Game</Day>
+<description>
+  #4/5 Syracuse (7-0), fresh
+  off a victory in the EA Sports
+  Maui Invitational, returns to the mainland
+  to take on rv/23 Indiana (6-1) in the Big
+  10/ACC Challenge on December 3. It’s
+  a rematch of a 2013 NCAA Tournament
+  “Sweet 16” game from March 28. The
+  Orange defeated the Hoosiers, 61-50, and
+  ultimately advanced to the Final Four
+</description>
+<image>basketball.jpg</image>
+</basketball>
+<football>
+<Day>May 9th Football Game</Day>
+<description>The 2014 Syracuse football season gets underway on Saturday, April 19 with the annual Spring game at the Carrier Dome. All Orange fans are invited to enjoy a fun-filled day at the Dome that includes promotional giveaways, an opportunity to 'Select A Seat' for the 2014 season, a team poster, and a free hot dog and soda.</description>
+<image>football.jpg</image>
+</football>
+<lecture>
+<Day>May 12th Lecture</Day>
+<description>Recently named a co-host to CNN’s Crossfire reboot, Van Jones is president and co-founder of Rebuild the Dream, a platform for bottom-up, people-powered innovations to help fix the U.S. economy. A Yale-educated attorney, Jones has written two New York Times Best Sellers: “The Green Collar Economy,” the definitive book on green jobs, and “Rebuild the Dream,” a roadmap for progressives in 2012 and beyond.</description>
+<image>lecture.jpg</image>
+</lecture>
+<volunteer>
+<Day>May 17th Volunteer's Day</Day>
+<description>Since the spring of 2009, Ignatian Volunteers have been established in the Diocese of Syracuse. We currently have volunteers working at service sites in and around Syracuse. These volunteers work at agencies that serve the poor, the homeless, immigrants, refugees, –those who are materially in need.</description>
+<image>volunteer.jpg</image>
+</volunteer>
+<concert>
+<Day>May 21th Concert</Day>
+<description>Hooligan's Holiday, Live Wire, Shout at the Devil, Wild Side, Uncle Jack, Dr. Feelgood, Misunderstood, Kickstart My Heart, Home Sweet Home, Revolution, Driftaway, Don't Go Away Mad (Just Go Away), Hammered, Primal Scream</description>
+<image>concert.jpg</image>
+</concert>
+<graduation>
+<Day>May 29th Graduation Day</Day>
+<description>The Graduate School offers over 200 degree programs among its 10 schools and colleges and awards approximately 1,600 Master's degrees each year. Since its founding in 1870, the Graduate School has been a leader in quality graduate education among its peers in higher education.</description>
+<image>graduation.jpg</image>
+</graduation>
+<CD>
+<TITLE>Hide your heart</TITLE>
+<ARTIST>Bonnie Tyler</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>CBS Records</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>1988</YEAR>
+</CD>
+<CD>
+<TITLE>Greatest Hits</TITLE>
+<ARTIST>Dolly Parton</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>RCA</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>1982</YEAR>
+</CD>
+<CD>
+<TITLE>Still got the blues</TITLE>
+<ARTIST>Gary Moore</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Virgin records</COMPANY>
+<PRICE>10.20</PRICE>
+<YEAR>1990</YEAR>
+</CD>
+<CD>
+<TITLE>Eros</TITLE>
+<ARTIST>Eros Ramazzotti</ARTIST>
+<COUNTRY>EU</COUNTRY>
+<COMPANY>BMG</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>1997</YEAR>
+</CD>
+<CD>
+<TITLE>One night only</TITLE>
+<ARTIST>Bee Gees</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Polydor</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1998</YEAR>
+</CD>
+<CD>
+<TITLE>Sylvias Mother</TITLE>
+<ARTIST>Dr.Hook</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>CBS</COMPANY>
+<PRICE>8.10</PRICE>
+<YEAR>1973</YEAR>
+</CD>
+<CD>
+<TITLE>Maggie May</TITLE>
+<ARTIST>Rod Stewart</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Pickwick</COMPANY>
+<PRICE>8.50</PRICE>
+<YEAR>1990</YEAR>
+</CD>
+<CD>
+<TITLE>Romanza</TITLE>
+<ARTIST>Andrea Bocelli</ARTIST>
+<COUNTRY>EU</COUNTRY>
+<COMPANY>Polydor</COMPANY>
+<PRICE>10.80</PRICE>
+<YEAR>1996</YEAR>
+</CD>
+<CD>
+<TITLE>When a man loves a woman</TITLE>
+<ARTIST>Percy Sledge</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>Atlantic</COMPANY>
+<PRICE>8.70</PRICE>
+<YEAR>1987</YEAR>
+</CD>
+<CD>
+<TITLE>Black angel</TITLE>
+<ARTIST>Savage Rose</ARTIST>
+<COUNTRY>EU</COUNTRY>
+<COMPANY>Mega</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1995</YEAR>
+</CD>
+<CD>
+<TITLE>1999 Grammy Nominees</TITLE>
+<ARTIST>Many</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>Grammy</COMPANY>
+<PRICE>10.20</PRICE>
+<YEAR>1999</YEAR>
+</CD>
+<CD>
+<TITLE>For the good times</TITLE>
+<ARTIST>Kenny Rogers</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Mucik Master</COMPANY>
+<PRICE>8.70</PRICE>
+<YEAR>1995</YEAR>
+</CD>
+<CD>
+<TITLE>Big Willie style</TITLE>
+<ARTIST>Will Smith</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>Columbia</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>1997</YEAR>
+</CD>
+<CD>
+<TITLE>Tupelo Honey</TITLE>
+<ARTIST>Van Morrison</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Polydor</COMPANY>
+<PRICE>8.20</PRICE>
+<YEAR>1971</YEAR>
+</CD>
+<CD>
+<TITLE>The very best of</TITLE>
+<ARTIST>Cat Stevens</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Island</COMPANY>
+<PRICE>8.90</PRICE>
+<YEAR>1990</YEAR>
+</CD>
+<CD>
+<TITLE>Stop</TITLE>
+<ARTIST>Sam Brown</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>A and M</COMPANY>
+<PRICE>8.90</PRICE>
+<YEAR>1988</YEAR>
+</CD>
+<CD>
+<TITLE>Bridge of Spies</TITLE>
+<ARTIST>T'Pau</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Siren</COMPANY>
+<PRICE>7.90</PRICE>
+<YEAR>1987</YEAR>
+</CD>
+<CD>
+<TITLE>Private Dancer</TITLE>
+<ARTIST>Tina Turner</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>Capitol</COMPANY>
+<PRICE>8.90</PRICE>
+<YEAR>1983</YEAR>
+</CD>
+<CD>
+<TITLE>Midt om natten</TITLE>
+<ARTIST>Kim Larsen</ARTIST>
+<COUNTRY>EU</COUNTRY>
+<COMPANY>Medley</COMPANY>
+<PRICE>7.80</PRICE>
+<YEAR>1983</YEAR>
+</CD>
+<CD>
+<TITLE>Pavarotti Gala Concert</TITLE>
+<ARTIST>Luciano Pavarotti</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>DECCA</COMPANY>
+<PRICE>9.90</PRICE>
+<YEAR>1991</YEAR>
+</CD>
+<CD>
+<TITLE>The dock of the bay</TITLE>
+<ARTIST>Otis Redding</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>Atlantic</COMPANY>
+<PRICE>7.90</PRICE>
+<YEAR>1987</YEAR>
+</CD>
+<CD>
+<TITLE>Picture book</TITLE>
+<ARTIST>Simply Red</ARTIST>
+<COUNTRY>EU</COUNTRY>
+<COMPANY>Elektra</COMPANY>
+<PRICE>7.20</PRICE>
+<YEAR>1985</YEAR>
+</CD>
+<CD>
+<TITLE>Red</TITLE>
+<ARTIST>The Communards</ARTIST>
+<COUNTRY>UK</COUNTRY>
+<COMPANY>London</COMPANY>
+<PRICE>7.80</PRICE>
+<YEAR>1987</YEAR>
+</CD>
+<CD>
+<TITLE>Unchain my heart</TITLE>
+<ARTIST>Joe Cocker</ARTIST>
+<COUNTRY>USA</COUNTRY>
+<COMPANY>EMI</COMPANY>
+<PRICE>8.20</PRICE>
+<YEAR>1987</YEAR>
+</CD>
+</CATALOG>

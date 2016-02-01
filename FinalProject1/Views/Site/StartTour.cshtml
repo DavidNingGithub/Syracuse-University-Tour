@@ -1,0 +1,303 @@
+﻿
+@{
+    ViewBag.Title = "StartTour";
+    List<FinalProject1.Models.Site> uselist = (List<FinalProject1.Models.Site>)Session["SiteMap"];
+    FinalProject1.Models.Site currentlocation = uselist[0];
+    string action = "StartTour";
+    string previous = "Quad";
+    string current = "Languages";
+    int check = (int)Session["mark"];
+    if (uselist.Count() >= 2)
+    {
+        if (check != 0)
+        {
+            previous = (string)(uselist[0].SiteName);
+            if (previous == "New House")
+            {
+                previous = "New";
+            }
+            if (previous == "Chapel ")
+            {
+                previous = "Chapel";
+            }
+            current = (string)(uselist[1].SiteName);
+            if (current == "New House")
+            {
+                current = "New";
+            }
+            currentlocation = uselist[1];
+            uselist.Remove(uselist[0]);
+        }
+        else
+        {
+            previous = "Quad";
+            current = (string)(uselist[0].SiteName);
+            if (current == "New House")
+            {
+                current = "New";
+            }
+            if (current == "Chapel ")
+            {
+                current = "Chapel";
+            }
+        }
+    }
+    else
+    {
+        previous = "Quad";
+        current = (string)(uselist[0].SiteName);
+        if (current == "New House")
+        {
+            current = "New";
+        }
+        if (current == "Chapel ")
+        {
+            current = "Chapel";
+        }
+        uselist.Remove(uselist[0]);
+        action = "HomePage";
+    }
+    string button1 = "Quad"+current;
+    string button2 = previous + current;
+    Session["mark"] = 1; 
+    Session["SiteMap"] = uselist;
+    string point = "hidden";
+    string point1 = "hidden";
+    string point2 = "hidden";
+    string point3 = "hidden";
+    string point4 = "hidden";
+    string point5 = "hidden";
+    string point6 = "hidden";
+    string point0 = "hidden";
+    string point01 = "hidden";
+    string point02 = "hidden";
+    string point03 = "hidden";
+    string point04 = "hidden";
+    string point05 = "hidden";
+    string point06 = "hidden";
+    switch(current)
+    {
+        case "Bird":
+            point0 = "visible";
+            break;
+        case "New":
+            point01 = "visible";
+            break;
+        case "Dome":
+            point02 = "visible";
+            break;
+        case "Carnegie":
+            point03 = "visible";
+            break;
+        case "Chapel":
+            point04 = "visible";
+            break;
+        case "Languages":
+            point05 = "visible";
+            break;
+        case "Crouse":
+            point06 = "visible";
+            break;
+        default:
+            break;        
+    }
+    switch (previous)
+    {
+        case "Bird":
+            point = "visible";
+            break;
+        case "New":
+            point1 = "visible";
+            break;
+
+        case "Dome":
+            point2 = "visible";
+            break;
+
+        case "Carnegie":
+            point3 = "visible";
+            break;
+        case "Chapel":
+            point4 = "visible";
+            break;
+        case "Languages":
+            point5 = "visible";
+            break;
+        case "Crouse":
+            point6 = "visible";
+            break;
+        default:
+            break;
+    }
+    
+}
+<head>
+    <title>you</title>
+    <script type="text/javascript">
+    function loadXMLDoc(url) {
+        var xmlhttp;
+        document.getElementById("tryit2").style.visibility = "visible";
+        var txt, x, xx, i;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                x = xmlhttp.responseXML.documentElement.getElementsByTagName(url);
+                xx = x[0].getElementsByTagName("Route");
+                txt = "<p>" + xx[0].firstChild.nodeValue+"</p>"
+                document.getElementById("tryit").innerHTML = txt;
+            }
+        }
+        xmlhttp.open("GET", "../Content/image/Direction1.xml", true);
+        xmlhttp.send();
+    }
+    function loadXMLDoc2(url) {
+        var xmlhttp;
+        document.getElementById("tryit2").style.visibility = "visible";
+        var txt, x, xx, i;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                x = xmlhttp.responseXML.documentElement.getElementsByTagName(url);
+                xx = x[0].getElementsByTagName("Map");
+                txt = "<img src='../Content/image/"+xx[0].firstChild.nodeValue+".PNG' style='width:386px; height: 396px;'></img>"
+                document.getElementById("tryit").innerHTML = txt;
+            }
+        }
+        xmlhttp.open("GET", "../Content/image/Direction1.xml", true);
+        xmlhttp.send();
+    }
+    function loadXMLDoc3(url) {
+        var xmlhttp;
+        document.getElementById("tryit2").style.visibility = "visible";
+        var txt, x, xx, i;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                x = xmlhttp.responseXML.documentElement.getElementsByTagName(url);
+                xx = x[0].getElementsByTagName("Route");
+                txt = "<p>" + xx[0].firstChild.nodeValue + "</p>"
+                document.getElementById("tryit4").innerHTML = txt;
+            }
+        }
+        xmlhttp.open("GET", "../Content/image/Direction1.xml", true);
+        xmlhttp.send();
+    }
+    function loadXMLDoc4(url) {
+        var xmlhttp;
+        document.getElementById("tryit2").style.visibility = "visible";
+        var txt, x, xx, i;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                x = xmlhttp.responseXML.documentElement.getElementsByTagName(url);
+                xx = x[0].getElementsByTagName("Map");
+                txt = "<img src='../Content/image/" + xx[0].firstChild.nodeValue + ".PNG' style='width:386px; height: 396px;'></img>"
+                document.getElementById("tryit4").innerHTML = txt;
+            }
+        }
+        xmlhttp.open("GET", "../Content/image/Direction1.xml", true);
+        xmlhttp.send();
+    }
+    </script>
+    <script type="text/javascript">
+        function num() {
+
+            document.getElementById("useit").style.visibility = "visible";
+        }
+        function startfunction() {
+            document.getElementById("button1").click();
+            document.getElementById("button2").click();
+        }
+    </script>
+    </head>
+
+    <body style="background-color:orange;height:1700px" onload="startfunction()">
+    <p style="font-size:x-large;position:absolute;top:100px;left:610px">Current Location</p>
+    <div id="useit" style="border: 1px solid black; width: 550px; height: 460px;position:absolute;left:435px;top:150px">
+        <div style="text-align:center">@currentlocation.SiteName</div>
+        <img style="position: relative; width: 540px; height: 370px; left: 2px" src="../Content/image/@currentlocation.Image">
+        <div style="word-break:break-all">@currentlocation.Description</div>
+    </div>
+    @*<div style="border: 1px solid black; width: 550px; height: 460px;position:absolute;left:450px;top:150px">
+            <div style="text-align:center">Bird Library</div>
+            <img style="position: relative; width: 540px; height: 370px; left: 2px" src="../Content/image/syracuse.jpg">
+            <div style="word-break:break-all">Bird Library is the main library on campus and houses materials in the humanities and social sciences. Here you will also find our audiovisual resources, government publications, and maps. It is also home to the Learning Commons, an open, active environment where you can get research assistance, meet with a group, or study on your own.</div>
+        </div>*@
+    <div style="border:2px solid black;position:absolute;top:650px;left:300px;width:792px;height:445px">
+        <img src="@Url.Content("~/Content/image/mainmap.jpg")" style="float: left;position:relative" usemap="#planetmap" />
+        <map name="#planetmap">
+            <area shape="circle" coords="239,137,10" onmouseover="display()" style="position:absolute" onmouseout="dispear()" />
+            <area shape="circle" coords="317,211,10" onmouseover="display1()" onmouseout="dispear1()" />
+            <area shape="circle" coords="521,146,50" onmouseover="display2()" onmouseout="dispear2()" />
+            <area shape="circle" coords="419,116,10" onmouseover="display3()" onmouseout="dispear3()" />
+            <area shape="circle" coords="428,158,10" onmouseover="display4()" onmouseout="dispear4()" />
+            <area shape="circle" coords="365,164,10" onmouseover="display5()" onmouseout="dispear5()" />
+            <area shape="circle" coords="443,203,10" onmouseover="display6()" onmouseout="dispear6()" />
+            @*<div id="cross" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 80px; top: 137px; "><img src="../Content/image/bird.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Bird Library</div></div>*@
+            <img id="point" src="../Content/image/point.png" onclick="num()" style="width: 40px; visibility: @point; height: 50px; position: absolute; left: 215px; top: 92px; " />
+            @*<div id="cross1" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 158px; top: 211px; "><img src="../Content/image/newHouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">New House</div></div>*@
+            <img id="point1" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point1; left: 293px; top: 166px; " />
+            @*<div id="cross2" style="position: absolute; border: 1px solid black; padding: 2px;visibility: hidden; left: 362px; top: 146px; "><img src="../Content/image/dome.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Dome</div></div>*@
+            <img id="point2" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point2; left: 497px; top: 101px; " />
+            @*<div id="cross3" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 260px; top: 116px; "><img src="../Content/image/carnegie.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Carnegie Library</div></div>*@
+            <img id="point3" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point3; left: 395px; top: 71px; " />
+            @*<div id="cross4" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 269px; top: 158px; "><img src="../Content/image/hendricks2.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hendricks Chapel</div></div>*@
+            <img id="point4" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point4; left: 404px; top: 113px; " />
+            @*<div id="cross5" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 206px; top: 164px; "><img src="../Content/image/languages.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hall of Languages</div></div>*@
+            <img id="point5" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point5; left: 341px; top: 119px; " />
+            @*<div id="cross6" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 284px; top: 203px; "><img src="../Content/image/crouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Crouse College</div></div>*@
+            <img id="point6" src="../Content/image/point.png" style="width: 40px; height: 50px; position: absolute; visibility: @point6; left: 419px; top: 158px; " />
+            @*<div id="cross" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 80px; top: 137px; "><img src="../Content/image/bird.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Bird Library</div></div>*@
+            <img id="point0" src="../Content/image/point2.png" onclick="num()" style="width: 40px; visibility: @point0; height: 50px; position: absolute; left: 215px; top: 92px; " />
+            @*<div id="cross1" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 158px; top: 211px; "><img src="../Content/image/newHouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">New House</div></div>*@
+            <img id="point01" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: @point01; left: 293px; top: 166px; " />
+            @*<div id="cross2" style="position: absolute; border: 1px solid black; padding: 2px;visibility: hidden; left: 362px; top: 146px; "><img src="../Content/image/dome.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Dome</div></div>*@
+            <img id="point02" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: @point02; left: 497px; top: 101px; " />
+            @*<div id="cross3" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 260px; top: 116px; "><img src="../Content/image/carnegie.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Carnegie Library</div></div>*@
+            <img id="point03" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: @point03; left: 395px; top: 71px; " />
+            @*<div id="cross4" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 269px; top: 158px; "><img src="../Content/image/hendricks2.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hendricks Chapel</div></div>*@
+            <img id="point04" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: @point04; left: 404px; top: 113px; " />
+            @*<div id="cross5" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 206px; top: 164px; "><img src="../Content/image/languages.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hall of Languages</div></div>*@
+            <img id="point05" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: @point05; left: 341px; top: 119px; " />
+            @*<div id="cross6" style="position: absolute; border: 1px solid black; padding: 2px; visibility: hidden; left: 284px; top: 203px; "><img src="../Content/image/crouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Crouse College</div></div>*@
+            <img id="point06" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility:@point06; left: 419px; top: 158px; " />
+
+        </map>
+    </div>
+    <div style="position:absolute;top:150px;left:0px;border:2px solid black;width:400px;height:460px;word-break:break-all">
+        <p id="tryit2" style="visibility:hidden">Direction From Quad Center<div id="tryit" style="position: relative; border: 1px solid black; left: 3px;width:390px; height: 400px; word-break: break-all"></div>
+    </div>
+    <button id="button1" onclick="loadXMLDoc('@button1')" style="position:absolute;top:610px;left:90px">Get Text Direction</button>
+    <button id="button1" onclick="loadXMLDoc2('@button1')" style="position:absolute;top:610px;left:0px">Show On Map</button>
+    <div style="position:absolute;top:150px;right:0px;border:2px solid black;width:400px;height:460px">
+        <p id="tryit3">Direction From Previous Site<div id="tryit4" style="position: relative; border: 1px solid black; left: 3px;width:390px; height: 400px; word-break: break-all"></div>
+    </div>
+    <button id="button2" onclick="loadXMLDoc3('@button2')" style="position:absolute;top:610px;right:90px">Get Text Direction</button>
+    <button id="button2" onclick="loadXMLDoc4('@button2')" style="position:absolute;top:610px;right:0px">Show On Map</button>
+    <div style="font-size:x-large;position:absolute;top:900px;right:0px">
+        @Html.ActionLink("Go To Next Site", @action, "Site")
+    </div>
+    <div style="position:absolute;top:1500px;height:200px">
+        I am here
+    </div>
+</body>

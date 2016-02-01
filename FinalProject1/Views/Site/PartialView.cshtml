@@ -1,0 +1,48 @@
+﻿<head>
+    <title>Homepage</title>
+    <script type="text/javascript">
+        var CaptionedImages = [
+          "<div ><div><img src='../Content/image/backgroud.jpg' border=0 width=1190/></div><div> &nbsp;&nbsp;In February 1870, at the Methodist State Convention in Syracuse, NY, a resolution was passed to found a university in that city. Measures were taken to raise $500,000 to endow the university, with the city of Syracuse subscribing $100,000. Rev. Jesse T. Peck, who was elected president of the Syracuse University Board of Trustees, suggested purchasing fifty acres of farmland in southeastern Syracuse. The Board of Trustees of Syracuse University signed the University charter and certificate of incorporation on March 24, 1870. <br>  &nbsp;&nbsp;Contrary to popular history, Genesee College in Lima, Livingston Co., NY, was not a predecessor of Syracuse University. Starting in 1866, attempts were made to move Genesee College to Syracuse, a more central location in the state, but strong opposition from the residents of Lima prevented this from happening. The Board of Trustees of Genesee College even obtained permission from the state to move the school to Syracuse in 1869; however, an injunction obtained by Lima residents made such a move impossible. As a result, Genesee College remained in Lima until 1875, when it was dissolved under New York State law by petition of its Board of Trustees.<br> &nbsp;Though the cornerstone for the Hall of Languages had just been laid in August of 1871, the Syracuse University Board of Trustees decided to open the College of Liberal Arts in September. The upper floors of the Myers Block, in downtown Syracuse, were rented as a temporary campus. Applicants underwent a series of written examinations, after which forty-one students, including seven women, were admitted to either four-year programs of classical study or three-year programs in a scientific field. Faculty of the University met several times during this first year to determine adequate courses of study. By 1872 the University devised a set program for three fields of study, each four years long. In February 1873, Alexander Winchell was inaugurated as Syracuse University's first chancellor. In May the Hall of Languages, the first building on the new campus, was dedicated and in use.</div></div>",
+          //"<div><div><img src='../Content/image/carnegie.jpg' height='350' border=0 /></div><div>SW Studio Project Demo</div></div>",
+        ];
+        var rand = 60 / CaptionedImages.length;
+        var currentDate = 0;
+        var imageNumber = 0;
+        function randomimage() {
+            currentDate = new Date();
+            image_number = currentDate.getSeconds();
+            image_number = Math.floor(image_number / rand);
+
+            return (CaptionedImages[image_number]);
+        }
+    </script>
+    <style type="text/css">
+        li.a {
+            position: relative;
+            float: right;
+            clear: both;
+        }
+
+        img.class {
+            z-index: -3;
+        }
+
+        #style {
+            border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+        }
+
+        .style {
+            border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+        }
+    </style>
+
+</head>
+<body style="background-color: orange;height:1700px;">
+    <div id="style" style="top:850px; margin:10px;border:1px solid black; padding:5px; text-align:left;position:relative;left:100px;width:1200px;font-style:italic;color:royalblue;height:auto;font-size:medium">
+        <p style="position:relative;left:450px">
+            Brife History Of Syracuse Univesity
+            <script type="text/javascript">document.write(randomimage());</script>
+    </div>
+</body>
+
+

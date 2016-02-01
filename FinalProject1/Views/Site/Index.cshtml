@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<FinalProject1.Models.Site>
+
+@{
+    ViewBag.Title = "Index";
+   FinalProject1.Models.Site[] a= Model.ToArray();
+   int num = a.Count();
+   string birdimage="bird.jpg";
+   string birddescription="null";
+   foreach(var item in Model)
+   {
+       switch (item.SiteName)
+       {
+           case "Bird":
+               birdimage=item.Image;
+               birddescription = item.Description;
+               break;
+       }
+   }
+   
+}
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SiteName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SiteName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Image)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SiteId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SiteId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SiteId })
+        </td>
+    </tr>
+}
+
+</table>

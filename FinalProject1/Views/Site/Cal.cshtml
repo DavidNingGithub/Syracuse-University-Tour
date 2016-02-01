@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Cal";
+}
+
+<body style="height:1000px;background-color:orange">
+<div>
+    <div style="border:2px solid black;position:absolute;left:0px;width:184px;height:190px">
+        <p id="date"></p>
+        <p style="font-size:large">Date Of Today</p>
+    </div>
+    <div style="border:2px solid black;position:absolute;left:185px;width:1100px;height:1000px">
+        <p style="position:absolute;top:30px;left:430px;font-size:xx-large">Events In May</p>
+        <div style="position:relative;left:27px;top:100px">
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date</div>
+                <img style="position:relative;float:left;width:330px;height:260px;left:5px" src="../Content/image/@ViewBag.image">
+                <div style="word-break:break-all">@ViewBag.des</div>
+             </div>
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date1</div>
+                <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src="../Content/image/@ViewBag.image1">
+                <div style="word-break:break-all">@ViewBag.des1</div>
+            </div>
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date2</div>
+                <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src="../Content/image/@ViewBag.image2">
+                <div style="word-break:break-all">@ViewBag.des2</div>
+            </div>
+        </div>
+        <div style="position:relative;left:27px;top:530px">
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date3</div>
+                <img style="position:relative;float:left;width:330px;height:260px;left:5px" src="../Content/image/@ViewBag.image3">
+                <div style="word-break:break-all">@ViewBag.des3</div>
+            </div>
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date4</div>
+                <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src="../Content/image/@ViewBag.image4">
+                <div style="word-break:break-all">@ViewBag.des4</div>
+            </div>
+            <div style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+                <div style="font-size:large;text-align:center">@ViewBag.Date5</div>
+                <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src="../Content/image/@ViewBag.image5">
+                <div style="word-break:break-all">@ViewBag.des5</div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div style="position:absolute;top:1300px;border:2px solid double;height:300px;width:200px">
+        <p></p>
+        </div>
+</body>

@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FinalProject1.Models.Site>
+    ViewBag.Title = "Catalog";
+}
+
+<h2>Catalog</h2>
+
+@{
+    ViewBag.Title = "Catalog";
+    
+}
+
+<h2>Catalog</h2>
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+<img src="@Url.Content("~/Content/SUmap.png")" usemap="#planetmap" />
+@*<img src="@Url.Content("~/App_Data/4.jpg")" usemap="#planetmap" />*@
+<map name="#planetmap">
+    <area shape="circle" coords="358,183,10" @Html.ActionLink("bird", "AddToCart", new { sitename = "New House" }) />
+    <area shape="circle" coords="463,271,10" @Html.ActionLink("new", "AddToCart", new { sitename = "bird" }) />
+    <area shape="circle" coords="699,175,10" @Html.ActionLink("gym", "AddToCart", new { sitenem = "gym" }) />
+</map>
+
+@{
+    int size = ((List<FinalProject1.Models.Site>)Session["SiteMap"]).Count();
+}
+<img src="@Url.Content("~/Content/image/carnegie.jpg")"/>
+<h3>Shopping Cart contains @size items</h3>

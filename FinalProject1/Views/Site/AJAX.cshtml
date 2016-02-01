@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "AJAX";
+}
+
+
+<html>
+<head>
+    <title>AJAX</title>
+    <script type="text/javascript">
+        function loadXMLDoc() {
+            var xmlhttp;
+            var txt, x, xx, i;
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    txt = "<table border='10px' style='position:relative;left:20px'><tr><th>Title</th><th>Artist</th></tr>";
+                    x = xmlhttp.responseXML.documentElement.getElementsByTagName("CD");
+                    for (i = 0; i < x.length; i++) {
+                        txt = txt + "<tr>";
+                        xx = x[i].getElementsByTagName("TITLE");
+                        {
+                            try {
+                                txt = txt + "<td>" + xx[0].firstChild.nodeValue + "</td>";
+                            }
+                            catch (er) {
+                                txt = txt + "<td> </td>";
+                            }
+                        }
+                        xx = x[i].getElementsByTagName("ARTIST");
+                        {
+                            try {
+                                txt = txt + "<td>" + xx[0].firstChild.nodeValue + "</td>";
+                            }
+                            catch (er) {
+                                txt = txt + "<td> </td>";
+                            }
+                        }
+                        txt = txt + "</tr>";
+                    }
+                    txt = txt + "</table>";
+                    //txt=txt+"<p class='button' style='position: relative;left:150px;top:70px'>Html.ActionLink("Home", "Index", "Site")</p>"
+                    document.getElementById('txtCDInfo').innerHTML = txt;
+                }
+            }
+            xmlhttp.open("GET", '../Content/image/新建文本文档.xml', true);
+            xmlhttp.send();
+        }
+    </script>
+</head>
+<body>
+
+    <div id="txtCDInfo" style="border:2px solid black">
+        <button onclick="loadXMLDoc()">获得 CD 信息</button>
+    </div>
+
+</body>
+</html>

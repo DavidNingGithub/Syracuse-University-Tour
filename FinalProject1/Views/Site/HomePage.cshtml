@@ -1,0 +1,320 @@
+﻿@model IEnumerable<FinalProject1.Models.Site>
+@{
+    ViewBag.Title = "HomePage";
+    List<FinalProject1.Models.Site> SelectedSite = ((List<FinalProject1.Models.Site>)Session["SiteMap"]);
+    string mysoft = "";
+    for (int i = 0; i < SelectedSite.Count();i++ )
+    {
+        if (i == SelectedSite.Count() - 1)
+        {
+            mysoft += SelectedSite[i].SiteName;
+        }
+        else
+        {
+            mysoft = mysoft+SelectedSite[i].SiteName + ",";
+        }           
+    }
+    string Laction = "StartTour";
+    List<FinalProject1.Models.Site> AllSite = new List<FinalProject1.Models.Site>();
+    foreach(var item in Model)
+    {
+        AllSite.Add(item);   
+    }
+    Session["break"] = mysoft;
+    int try13 = 0;
+    Session["mark"] = try13;
+    Random a = new Random();
+    int temp = a.Next()%3;
+    string test = "../Content/image/backgroud.jpg";
+    string test1 = "";
+    string test2 = "";
+    string test3 = "";
+    string test4 = "";
+    string test5 = "";
+    string test6 = "";
+    string hidden1 = "";
+    string hidden2 = "";
+    switch (temp)
+    {
+        case 0:
+            hidden1 = "visible";
+            hidden2 = "hidden";  
+            test1= "../Content/image/bird.jpg";
+            test2= "../Content/image/dome.jpg";
+            test3= "../Content/image/hendricks.jpg";
+            test4= "../Content/image/syracuse.jpg";
+            test5= "../Content/image/upstate.jpg";
+            test6= "../Content/image/destiny.jpg";  
+            test = "../Content/image/backgroud.jpg";
+            break;
+        case 1:
+            hidden1 = "visible";
+            hidden2 = "hidden"; 
+            test1= "../Content/image/bird2.jpg";
+            test2= "../Content/image/dome2.jpg";
+            test3= "../Content/image/hendricks2.jpg";
+            test4= "../Content/image/syracuse2.jpg";
+            test5= "../Content/image/upstate2.jpg";
+            test6= "../Content/image/destiny2.jpg"; 
+            test = "../Content/image/backgroud4.jpg";
+            break;
+        case 2:
+            hidden1 = "hidden";
+            hidden2 = "visible"; 
+            test1= "../Content/image/bird3.jpg";
+            test2= "../Content/image/dome3.jpg";
+            test3= "../Content/image/hendricks3.jpg";
+            test4= "../Content/image/syracuse3.jpg";
+            test5= "../Content/image/upstate3.jpg";
+            test6= "../Content/image/destiny3.jpg"; 
+            test = "../Content/image/backgroud6.jpg";
+            break;
+        
+        default:
+             test1= "../Content/image/bird2.jpg";
+            test2= "../Content/image/dome2.jpg";
+            test3= "../Content/image/hendricks2.jpg";
+            test4= "../Content/image/syracuse2.jpg";
+            test5= "../Content/image/upstate2.jpg";
+            test6= "../Content/image/destiny2.jpg"; 
+            test = "../Content/image/backgroud.jpg";
+            break;
+    }   
+}
+<head>
+    <title>Homepage</title>
+<script type="text/javascript">
+    var CaptionedImages = [
+      "<div ><div><img src=@test border=0 width=1190/></div><div> &nbsp;&nbsp;In February 1870, at the Methodist State Convention in Syracuse, NY, a resolution was passed to found a university in that city. Measures were taken to raise $500,000 to endow the university, with the city of Syracuse subscribing $100,000. Rev. Jesse T. Peck, who was elected president of the Syracuse University Board of Trustees, suggested purchasing fifty acres of farmland in southeastern Syracuse. The Board of Trustees of Syracuse University signed the University charter and certificate of incorporation on March 24, 1870. <br>  &nbsp;&nbsp;Contrary to popular history, Genesee College in Lima, Livingston Co., NY, was not a predecessor of Syracuse University. Starting in 1866, attempts were made to move Genesee College to Syracuse, a more central location in the state, but strong opposition from the residents of Lima prevented this from happening. The Board of Trustees of Genesee College even obtained permission from the state to move the school to Syracuse in 1869; however, an injunction obtained by Lima residents made such a move impossible. As a result, Genesee College remained in Lima until 1875, when it was dissolved under New York State law by petition of its Board of Trustees.<br> &nbsp;Though the cornerstone for the Hall of Languages had just been laid in August of 1871, the Syracuse University Board of Trustees decided to open the College of Liberal Arts in September. The upper floors of the Myers Block, in downtown Syracuse, were rented as a temporary campus. Applicants underwent a series of written examinations, after which forty-one students, including seven women, were admitted to either four-year programs of classical study or three-year programs in a scientific field. Faculty of the University met several times during this first year to determine adequate courses of study. By 1872 the University devised a set program for three fields of study, each four years long. In February 1873, Alexander Winchell was inaugurated as Syracuse University's first chancellor. In May the Hall of Languages, the first building on the new campus, was dedicated and in use.</div></div>",
+      //"<div><div><img src='../Content/image/carnegie.jpg' height='350' border=0 /></div><div>SW Studio Project Demo</div></div>",
+    ];
+    var rand = 60 / CaptionedImages.length;
+    var currentDate = 0;
+    var imageNumber = 0;
+    function randomimage() {
+        currentDate = new Date();
+        image_number = currentDate.getSeconds();
+        image_number = Math.floor(image_number / rand);
+        
+        return (CaptionedImages[image_number]);
+    }
+    function display()
+    {
+        document.getElementById("cross").style.visibility = "visible";
+        document.getElementById("point").style.visibility = "visible";
+    }
+    function dispear() {
+        document.getElementById("cross").style.visibility = "hidden";
+        document.getElementById("point").style.visibility = "hidden";
+    }
+    function display1() {
+        document.getElementById("cross1").style.visibility = "visible";
+        document.getElementById("point1").style.visibility = "visible";
+    }
+    function dispear1() {
+        document.getElementById("cross1").style.visibility = "hidden";
+        document.getElementById("point1").style.visibility = "hidden";
+    }
+    function display2() {
+        document.getElementById("cross2").style.visibility = "visible";
+        document.getElementById("point2").style.visibility = "visible";
+    }
+    function dispear2() {
+        document.getElementById("cross2").style.visibility = "hidden";
+        document.getElementById("point2").style.visibility = "hidden";
+    }
+    function display3() {
+        document.getElementById("cross3").style.visibility = "visible";
+        document.getElementById("point3").style.visibility = "visible";
+    }
+    function dispear3() {
+        document.getElementById("cross3").style.visibility = "hidden";
+        document.getElementById("point3").style.visibility = "hidden";
+    }
+    function display4() {
+        document.getElementById("cross4").style.visibility = "visible";
+        document.getElementById("point4").style.visibility = "visible";
+    }
+    function dispear4() {
+        document.getElementById("cross4").style.visibility = "hidden";
+        document.getElementById("point4").style.visibility = "hidden";
+    }
+    function display5() {
+        document.getElementById("cross5").style.visibility = "visible";
+        document.getElementById("point5").style.visibility = "visible";
+    }
+    function dispear5() {
+        document.getElementById("cross5").style.visibility = "hidden";
+        document.getElementById("point5").style.visibility = "hidden";
+    }
+    function display6() {
+        document.getElementById("cross6").style.visibility = "visible";
+        document.getElementById("point6").style.visibility = "visible";
+    }
+    function dispear6() {
+        document.getElementById("cross6").style.visibility = "hidden";
+        document.getElementById("point6").style.visibility = "hidden";
+    }
+
+$(document).ready(function(){
+    $(document).mousemove(function(event){
+        $("span").text(event.pageX + ", " + event.pageY);
+    });
+});
+</script>
+    <style type="text/css">
+        li.a
+        {
+          position:relative;
+          float:right;
+          clear:both;
+        }
+        img.class {
+          
+            z-index: -3;
+        }
+        #style {
+            border-radius: 10px 10px 10px 10px / 10px 10px 10px 10px;
+        }
+        .style {
+            border-radius: 5px 5px 5px 5px / 5px 5px 5px 5px;
+        }
+    </style>
+</head>
+<body style="background-color:orange;height:3000px">
+<div id="id1" style="visibility:@hidden1; position:relative;left:200px">
+    <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+        <div style="text-align:center">Bird Library</div>
+        <img style="position:relative;float:left;width:330px;height:260px;left:5px" src=@test1>
+        <div style="word-break:break-all">Bird Library is the main library on campus and houses materials in the humanities and social sciences. Here you will also find our audiovisual resources, government publications, and maps. It is also home to the Learning Commons, an open, active environment where you can get research assistance, meet with a group, or study on your own.</div>
+    </div>
+    <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+        <div style="text-align:center">Dome</div>
+        <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test2>
+        <div style="word-break:break-all">&nbsp;A variety of events have been hosted at the Dome, including SU football, basketball, track and field soccer, field hockey; University commencement and various academic convocations; ice skating shows; concerts; community events; and an annual celebration honoring the life of Dr. Martin Luther King Jr. At the time construction was ranked 5th largest domed stadium in the United States.</div>
+    </div>
+    <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+        <div style="text-align:center">Hendricks Chapel</div>
+        <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test3>
+        <div style="word-break:break-all">&nbsp;Francis Hendricks was a state senator, SU trustee from 1895 until his death in 1920. His donation called for a chapel honoring his late wife Eliza Jane that would serve all faiths. He also stipulated the name "Hendricks Chapel" in his will. The pulpit was the gift of the Class of 1918. The original Aeolian organ niece of Francis Hendricks, was replaced in 1952 with a new organ built by Walter Holtkamp.</div>
+    </div>
+</div>
+    <div id="id2" style="visibility:@hidden1;position:relative;left:200px;top:415px">
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+            <div style="text-align:center">Syracuse</div>
+            <img style="position:relative;float:left;width:330px;height:260px;left:5px" src=@test4>
+            <div style="word-break:break-all">Syracuse is a city in, and the county seat of, Onondaga County, New York, United States. It is the fifth most populous city in the state of New York.[1] At the 2010 census, the city's population was 145,170, and the metropolitan area had a population of 662,577. It is the economic and educational hub of Central New York, a region with over a million inhabitants. </div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+            <div style="text-align:center">Upstate</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test5>
+            <div style="word-break:break-all">&nbsp;University Hospital in Syracuse is part of SUNY Upstate Medical University and is the only academic medical center in Central New York. Academic medical centers are built around medical schools and research missions.As a medical enterprise SUNY Upstate serves 1.8 million people, covering one-third of the state.</div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+            <div style="text-align:center">Destiny</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test6>
+            <div style="word-break:break-all">&nbsp;Destiny USA, previously known as the Carousel Center from 1990-2012, is a six-story super-regional shopping and entertainment complex on the shore of Onondaga Lake in Syracuse, New York.</div>
+        </div>
+    </div>
+    <div id="id3" style="visibility:@hidden2;position:relative;left:200px">
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+            <div style="text-align:center">New House</div>
+            <img style="position:relative;float:left;width:330px;height:260px;left:5px" src='../Content/image/newHouse.jpg'>
+            <div style="word-break:break-all">Building features a Collaborative Media Room, designed with clean lines, sleek furniture, and floor-to-ceiling glass panels overlooking campus and South Crouse Avenue; an expanded 2,500 square foot café; 350-seat auditorium; "Liberty Wrap" features the words of the First Amendment etched in six-foot high letters on the glass wrapping the building.</div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+            <div style="text-align:center">Crouse College</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src='../Content/image/crouse.jpg'>
+            <div style="word-break:break-all">&nbsp;Hendricks Chapel is the diverse religious, spiritual, ethical and cultural heart of Syracuse University that connects people of all faiths and no faith through active engagement, mutual dialogue, reflective spirituality, responsible leadership and a rigorous commitment to social justice.</div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+            <div style="text-align:center">Hall of Languages</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src='../Content/image/languages.jpg'>
+            <div style="word-break:break-all">&nbsp;This was the first building built on campus. Prior to its construction classes were held in the Myers Block on E. Genesee and Montgomery Streets in downtown Syracuse. The building was primarily an H-shape with recesses in the front and rear walls on either side of the central section.</div>
+        </div>
+    </div>
+    <div id="id4" style="visibility:@hidden2;position:relative;left:200px;top:415px">
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:0px">
+            <div style="text-align:center">Upstate</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test5>
+            <div style="word-break:break-all">&nbsp;University Hospital in Syracuse is part of SUNY Upstate Medical University and is the only academic medical center in Central New York. Academic medical centers are built around medical schools and research missions.As a medical enterprise SUNY Upstate serves 1.8 million people, covering one-third of the state.</div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:350px">
+            <div style="text-align:center">Destiny</div>
+            <img style="position: relative; float: left; width: 330px; height: 260px; left: 5px" src=@test6>
+            <div style="word-break:break-all">&nbsp;Destiny USA, previously known as the Carousel Center from 1990-2012, is a six-story super-regional shopping and entertainment complex on the shore of Onondaga Lake in Syracuse, New York.</div>
+        </div>
+        <div id="style" style="border: 1px solid black; width: 340px; height: 405px;position:absolute;float:left;left:700px">
+            <div style="text-align:center">Syracuse</div>
+            <img style="position:relative;float:left;width:330px;height:260px;left:5px" src='../Content/image/backgroud6.jpg'>
+            <div style="word-break:break-all">Syracuse is a city in, and the county seat of, Onondaga County, New York, United States. It is the fifth most populous city in the state of New York.[1] At the 2010 census, the city's population was 145,170, and the metropolitan area had a population of 662,577. It is the economic and educational hub of Central New York, a region with over a million inhabitants. </div>
+        </div>
+    </div>
+    <p style="position:relative;top:835px; left:0px;color:black;font-size:x-large">Start your Syracuse University tour!</p>
+        <div id="style" style="position:relative;top:835px; left:200px; margin:10px;border:1px solid black; padding:5px; text-align:left;width:990px;height:450px">
+            <img src="@Url.Content("~/Content/image/mainmap.jpg")" style="float: left;" usemap="#planetmap" />
+            <map name="#planetmap">
+                <area shape="circle" coords="239,137,10"  onmouseover="display()" onmouseout="dispear()" @Html.ActionLink("b", "AddToCart", new { sitename = "Bird" }) />
+                <area shape="circle" coords="317,211,10" onmouseover="display1()" onmouseout="dispear1()" @Html.ActionLink("n", "AddToCart", new { sitename = "New House" }) />
+                <area shape="circle" coords="521,146,50" onmouseover="display2()" onmouseout="dispear2()" @Html.ActionLink("g", "AddToCart", new { sitename = "Dome" }) />
+                <area shape="circle" coords="419,116,10" onmouseover="display3()" onmouseout="dispear3()" @Html.ActionLink("g", "AddToCart", new { sitename = "Carnegie" }) />
+                <area shape="circle" coords="428,158,10" onmouseover="display4()" onmouseout="dispear4()" @Html.ActionLink("n", "AddToCart", new { sitename = "Chapel" }) />
+                <area shape="circle" coords="365,164,10" onmouseover="display5()" onmouseout="dispear5()" @Html.ActionLink("n", "AddToCart", new { sitename = "Languages" }) />
+                <area shape="circle" coords="443,203,10" onmouseover="display6()" onmouseout="dispear6()" @Html.ActionLink("n", "AddToCart", new { sitename = "Crouse" }) />
+                <div class="style" id="cross" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 80px; top: 137px; "><img src="../Content/image/bird.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Bird Library</div></div>
+                <img id="point" src="../Content/image/point2.png" style="width: 40px; visibility: hidden; height: 50px; position: absolute; left: 215px; top: 92px; "/>
+                <div class="style" id="cross1" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 158px; top: 211px; "><img src="../Content/image/newHouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">New House</div></div>
+                <img id="point1" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 293px; top: 166px; " />
+                <div class="style" id="cross2" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 362px; top: 146px; "><img src="../Content/image/dome.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Dome</div></div>
+                <img id="point2" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 497px; top: 101px; " />
+                <div class="style" id="cross3" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 260px; top: 116px; "><img src="../Content/image/carnegie.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Carnegie Library</div></div>
+                <img id="point3" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 395px; top: 71px; " />
+                <div class="style" id="cross4" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 269px; top: 158px; "><img src="../Content/image/hendricks2.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hendricks Chapel</div></div>
+                <img id="point4" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 404px; top: 113px; " />
+                <div class="style" id="cross5" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 206px; top: 164px; "><img src="../Content/image/languages.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Hall of Languages</div></div>
+                <img id="point5" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 341px; top: 119px; " />
+                <div class="style" id="cross6" style="position: absolute; border: 1px solid blue; padding: 2px; visibility: hidden; left: 284px; top: 203px; "><img src="../Content/image/crouse.jpg" style="width:150px;height:100px"><div style="color:black;text-align:center">Crouse College</div></div>
+                <img id="point6" src="../Content/image/point2.png" style="width: 40px; height: 50px; position: absolute; visibility: hidden; left: 419px; top: 158px; " />
+                <img src="../Content/image/dispare.PNG" style="position:absolute; right:5px;width:198px;height:50px;top:0px" />
+                <img src="../Content/image/dispare.PNG" style="position:absolute; right:0px;top:18px" />
+                <img src="../Content/image/dispare.PNG" style="position:absolute; right:0px;top:36px" />
+            </map>
+            <ul style="float:left">
+                <li class="a" style="font-size:x-large;top:40px;text-align:left" onmouseover="display()" onmouseout="dispear()">@Html.ActionLink("Bird", "AddToCart", new { sitename = "Bird" })</li>
+                <li class="a" style="font-size: x-large; top: 70px; text-align: center" onmouseover="display1()" onmouseout="dispear1()">@Html.ActionLink("New House", "AddToCart", new { sitename = "New House" })</li>
+                <li class="a" style="font-size:x-large;top:100px;text-align:center" onmouseover="display2()" onmouseout="dispear2()">@Html.ActionLink("Dome", "AddToCart", new { sitename = "Dome" })</li>
+                <li class="a" style="font-size:x-large;top:130px;text-align:center" onmouseover="display3()" onmouseout="dispear3()">@Html.ActionLink("Carnegie Library", "AddToCart", new { sitename = "Carnegie" })</li>
+                <li class="a" style="font-size:x-large;top:160px;text-align:center" onmouseover="display4()" onmouseout="dispear4()">@Html.ActionLink("Bendricks Chapel", "AddToCart", new { sitename = "Chapel" })</li>
+                <li class="a" style="font-size:x-large;top:190px;text-align:center" onmouseover="display5()" onmouseout="dispear5()">@Html.ActionLink("Hall of Languages", "AddToCart", new { sitename = "Languages" })</li>
+                <li class="a" style="font-size:x-large;top:220px;text-align:center" onmouseover="display6()" onmouseout="dispear6()">@Html.ActionLink("Crouse college", "AddToCart", new { sitename = "Crouse" })</li>            
+            </ul>
+        </div>
+        <div id="style" style="border:1px solid black;position:relative;top:840px;left:260px;width:800px;height:350px">
+<p style="font-size:x-large;position:absolute;float:left;top:30px">The Site you have selected</p>
+        <table style="position:relative;z-index:3; float:left;left:0px;top:30px">
+            @foreach (var item in SelectedSite)
+            {
+                <tr>
+                    <td style="font-size:x-large;position:relative;float:left;top:30px">
+                        @Html.DisplayFor(modelItem => item.SiteName)
+                    </td>
+                </tr>
+            }
+        </table>
+            <div style="position:relative;font-size:x-large;top:230px;right:0px">
+                @Html.ActionLink("Start The Tour", @Laction, "Site")
+            </div>
+</div>
+    <div style="height:80px;width:90px;position:absolute;top:900px;right:410px">
+    <audio controls>
+        <source src="../Content/Liekkas.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+        </div>
+        @*<div id="style" style="top:1235px; margin:10px;border:1px solid black; padding:5px; text-align:left;position:relative;left:100px;width:1200px;font-style:italic;color:royalblue;height:auto;font-size:medium">
+            <p style="position:relative;left:450px">
+                Brife History Of Syracuse Univesity
+                <script type="text/javascript">document.write(randomimage());</script>
+        </div>*@
+    @Html.Partial("PartialView")
+</body>
